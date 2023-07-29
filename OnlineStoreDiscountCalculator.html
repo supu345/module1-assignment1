@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store Discount Calculator</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+    var purchaseAmount = 45;
+    var percentage = 0;
+    var discountValue = purchaseAmount*percentage/100;
+    var total = purchaseAmount-discountValue
+    
+
+    if (purchaseAmount>=200 && (percentage = 15)) {
+            document.write("discount is 15% and discount amount is $" + `${discountValue} ` + " total amount is : $" + `${total}`);
+        }
+        else if (purchaseAmount>=100 && purchaseAmount<=200 && (percentage = 10) ) {
+        document.write("discount is 10% and discount amount is $" + `${discountValue} ` + " total amount is : $" + `${total}`);
+    }
+     else if(purchaseAmount>=50 && purchaseAmount<=100 && (percentage = 5)){
+       document.write("discount is 5% and discount amount is $" + `${discountValue} ` + " total amount is : $" + `${total}`);
+    }
+    
+    else{
+        document.write("No discount and " + " total amount is : $ " + `${total}`);
+        
+    }
+    
+
+    </script>
+</body>
+</html>
